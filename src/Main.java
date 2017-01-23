@@ -78,6 +78,11 @@ public class Main {
                         roundSP += dieT;
                         System.out.println("You have a round score of: " + roundSP);
                         System.out.println();
+                        try {
+                            Thread.sleep(1000);
+                        } catch (InterruptedException e) {
+                            e.printStackTrace();
+                        }
 
                         break;
                 }
@@ -89,6 +94,13 @@ public class Main {
                 if (scoreP >= 100){
 
                     System.out.println("Congrats! You have beaten the robot with a score of: " + scoreP);
+
+                    try {
+                        Thread.sleep(5000);
+                    } catch (InterruptedException e) {
+                        e.printStackTrace();
+                    }
+
 
                 }
 
@@ -103,6 +115,11 @@ public class Main {
             if (scoreAI >= 100){
 
                 System.out.println("Robot has won with a score of: " + scoreAI);
+                try {
+                    Thread.sleep(5000);
+                } catch (InterruptedException e) {
+                    e.printStackTrace();
+                }
 
             }
 

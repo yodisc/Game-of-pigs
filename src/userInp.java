@@ -27,6 +27,13 @@ class userInp {
 
             } catch (InputMismatchException IME) {
 
+                try {
+                    Thread.sleep(1000);
+                } catch (InterruptedException e) {
+                    e.printStackTrace();
+                }
+                System.out.println("Error: " + IME);
+                System.out.println();
                 System.out.println("Please enter either 1 or 2!");
                 s.next();
 
